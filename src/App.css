@@ -1,0 +1,36 @@
+.List {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.Item {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  padding: 20px;
+  width: calc(33.33% - 10px);
+}
+
+.Item h3 {
+  margin-bottom: 10px;
+}
+
+.Item p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .Item {
+    width: calc(50% - 10px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Item {
+    width: 100%;
+  }
+}
